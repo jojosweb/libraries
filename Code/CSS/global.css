@@ -1,0 +1,58 @@
+
+.zoom.x2 { 
+  background-size: auto 200% !important;
+}
+
+
+
+
+/* SLIDE UP */
+@-webkit-keyframes slide-up {  
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, -110%);
+  }
+}
+
+
+
+
+/* TITLE OVERFLOW */
+@-webkit-keyframes title-overflow {
+  0%, 20%, 100% { 
+    transform: translateX(0%); 
+  }
+  
+  70% {
+    transform: translateX(-135%);
+  }
+
+  70.00001% {
+    transform: translateX(0%); 
+  }
+}
+
+
+
+
+/* MONOTONE BREATHER */
+.monotone-breather {
+  -webkit-animation: monotone-breather 3.5s ease-in-out infinite;
+} 
+
+@-webkit-keyframes monotone-breather {  
+  0% {
+    background-color: rgb(17, 17, 17);
+  }
+  
+  50% {
+    background-color: rgb(220, 220, 220);
+  }
+
+  100% {
+    background-color: rgb(17, 17, 17);
+  }
+}
