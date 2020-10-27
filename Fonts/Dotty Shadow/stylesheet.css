@@ -1,0 +1,10 @@
+  
+@font-face {
+    font-family: 'Dotty Shadow';
+    src: url('../Dotty Shadow/Dotty Shadow.eot'),
+    	 url('../Dotty Shadow/Dotty Shadow.woff2') format('woff2'),
+         url('../Dotty Shadow/Dotty Shadow.woff') format('woff'),
+         url('../Dotty Shadow/Dotty Shadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
