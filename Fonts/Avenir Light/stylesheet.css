@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Avenir Light';
+    src: url('../Avenir Light/Avenir Light.eot');
+    src: url('../Avenir Light/Avenir Light.eot?#iefix') format('embedded-opentype'),
+    	 url('../Avenir Light/Avenir Light.woff2') format('woff2'),
+         url('../Avenir Light/Avenir Light.woff') format('woff'),
+         url('../Avenir Light/Avenir Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
