@@ -464,7 +464,7 @@
 }
 
 .yc.black.icon::before {
-  background-image: url("");
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/YC/y-combinator-logo-black.png");
 }
 
 .invest.black.icon::before {
