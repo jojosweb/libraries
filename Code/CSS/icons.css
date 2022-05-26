@@ -453,24 +453,3 @@
 
 
 
-/******** ORGANIZATION - THE A005 CONGLOMERATE ********/
-.home.black.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Home/noun-home-4811798.png");
-}
-
-.info.black.icon::before,
-.about.black.icon::before{
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Info/noun-about-4253860.png");
-}
-
-.yc.black.icon::before {
-  background-image: url("");
-}
-
-.invest.black.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Invest/noun-invest-2909340.png");
-}
-
-.email.black.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Mail/noun-email-101391.png");
-}
