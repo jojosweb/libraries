@@ -467,6 +467,10 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/YC/y-combinator-logo-more-space.png");
 }
 
+.yc.black-and-white.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/YC/Black%20and%20White%20-%201.png");
+}
+
 .invest.black.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Invest/noun-invest-2909340.png");
 }
