@@ -455,12 +455,12 @@
 
 /******** ORGANIZATION - THE A005 CONGLOMERATE ********/
 .home.black.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Home/noun-home-4811798.png");
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Home/Designed%20New%20-%207.png");
 }
 
 .info.black.icon::before,
 .about.black.icon::before{
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Info/noun-about-4253860.png");
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Info/i%20-Black%20-%201.png");
 }
 
 .yc.black.icon::before {
@@ -476,5 +476,5 @@
 }
 
 .contact.black.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Mail/noun-email-101391.png");
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Mail/Darkened%20-%202.png");
 }
