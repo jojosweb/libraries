@@ -420,6 +420,17 @@
 
 
 
+/******** ORGANIZATION - LINKEDIN ********/
+.linkedin.black.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Social%20Media/LinkedIn/Black%20-%201%20(300).png");
+}
+
+
+
+
+
+
+
 
 /******** ORGANIZATION - ACOLORBLUE ********/
 .acolorblue.background.icon::before {
