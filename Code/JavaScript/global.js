@@ -24,7 +24,11 @@ var user_agent_length = navigator.userAgent.length,
     twitter_in_app = navigator.userAgent.match(/Twitter/i),
     instagram_in_app = navigator.userAgent.match(/Instagram/i),
     native_browser,
+    twitter,
+    instagram,
+    tumblr,
     this_element,
+    webpage_url,
     webpage_loader = $('body > .loader'),
     space = " ",
     period = ".",
@@ -34,10 +38,15 @@ var user_agent_length = navigator.userAgent.length,
     subtract,
     multiply,
     divide,
+    selected,
+    selected_exists,
+    unselected,
     random_color_generator_interval,
     hidden,
     media,
+    media_height,
     media_class,
+    covered,
     unwatched,
     clicked,
     watched,
@@ -57,7 +66,11 @@ var user_agent_length = navigator.userAgent.length,
     buffering_indicator,
     video,
     video_class,
-    source_link;
+    source_link,
+    line_break,
+    window_open_link,
+    email_address,
+    subject;
 
 
 
@@ -141,11 +154,11 @@ function deviceInfo() {
       html.addClass('firefox');
     }
     
+    
     function newUser() {
-      var first_impression_script = document.createElement('script');
-          first_impression_script.type = 'text/javascript';
-          first_impression_script.src = "https://acolorblue.co/libraries/Code/Javascript/first-impression.js?15";
-      $('body').append(first_impression_script);
+      if (firstImpression()) {
+        html.addClass('new-user');
+      }
     }
     newUser();
   }
@@ -233,6 +246,18 @@ function removeLoader(element, hideType, hideTimer, removeTimer) {
 
 
 
+// VIDEOS PRELOAD TO AUTO
+function videosPreloadToAuto(element) {
+  $(element).each(function() {
+    if ($(this).attr('preload') != 'auto') {
+      $(this).attr('preload', 'auto');
+    }
+  })
+}
+
+
+
+
 // ROTATE TO LANDSCAPE
 function rotateToLandscape() {
   if ($('body .rotate-to-landscape').length == 0) {
@@ -257,7 +282,7 @@ function rotateToPortrait() {
 
 // USER ACTIVE STATUS
 function userActiveStatus() {    
-  $(window).focus(); 
+  $(window).focus();
   
   $(window).on('blur', function() {
     if (mobile) {
@@ -265,259 +290,6 @@ function userActiveStatus() {
     }
   });
 }
-
-
-
-
-// CLOCK
-function clock() {
-          
-var clock_conversions_interval = setInterval(clockConversions, 1000);
-function clockConversions() {
- var date = new Date(),
-     month,
-     day_of_month,
-     year,
-     weekday,
-     hour, 
-     hour_hand,
-     timezone_offset,
-     minute,
-     minute_hand,
-     second,
-     second_hand,
-     meridiem,
-     am,
-     pm,
-     time,
-     abbreviations,
-     weekday_three_letters,
-     weekday_one_letter,
-     full_alphabetical_date,
-     full_numeric_date,
-     full_numeric_time,
-     mac_os;
-  
-  
-  function monthConversions() {
-    month = date.getMonth();
-
-      if (month == 0) {
-        month = 'January';
-      }
-
-      if (month == 1) {
-        month = 'February';
-      }
-
-      if (month == 2) {
-        month = 'March';
-      }
-
-      if (month == 3) {
-        month = 'April';
-      }
-
-      if (month == 4) {
-        month = 'May';
-      }
-
-      if (month == 5) {
-        month = 'June';
-      }
-
-      if (month == 6) {
-        month = 'July';
-      } 
-      
-      if (month == 7) {
-        month = 'August';
-      } 
-      
-      if (month == 8) {
-        month = 'September';
-      } 
-      
-      if (month == 9) {
-        month = 'October';
-      } 
-      
-      if (month == 10) {
-        month = 'November';
-      } 
-      
-      if (month == 11) {
-        month = 'December';
-      } 
-  }
-  monthConversions();
-  
-  
-  // MONTH CONVERSION           
-  function dayOfMonthConversions() {
-    day_of_month = date.getDate();
-  }
-  dayOfMonthConversions();
-  
-  
-  // YEAR CONVERSION
-  function yearConversions() {
-    year = date.getFullYear();
-  }
-  yearConversions();
-   
-  
-  // WEEKDAY CONVERSION
-  function weekdayConversions() {
-    weekday = date.getDay();
-    
-    if (weekday == 0) {
-      weekday = 'Sunday';
-    }
-
-    if (weekday == 1) {
-      weekday = 'Monday';
-    }
-
-    if (weekday == 2) {
-      weekday = 'Tuesday';
-    }
-
-    if (weekday == 3) {
-      weekday = 'Wednesday';
-    }
-
-    if (weekday == 4) {
-      weekday = 'Thursday';
-    }
-
-    if (weekday == 5) {
-      weekday = 'Friday';
-    }
-
-    if (weekday == 6) {
-      weekday = 'Saturday';
-    }
-  }
-  weekdayConversions();
-  
-  
-  // HOUR CONVERSION
-  function hourConversions() {
-    hour = date.getHours();
-   
-    function twelveHour() {
-     if (hour >= 12) {
-       hour -= 12;
-     }
-
-     if (hour == 0) {
-       hour = 12;
-     }
-    }
-    twelveHour();
-  }
-  hourConversions();
-  
-  
-  // MINUTE CONVERSION
-  function minuteConversions() {
-    minute = date.getMinutes();
-    
-    if (minute < 10) {
-      minute = '0' + minute;
-    } 
-  }
-  minuteConversions();
-  
-  
-  // SECOND CONVERSION
-  function secondConversions() {
-    second = date.getSeconds();
-    
-    if (second < 10) {
-      second = '0' + second;
-    } 
-  }
-  secondConversions();
-  
-  
-  // MERIDIEM CONVERSION
-  function meridiemConversions() {
-    am = date.getHours() < 12 || date.getHours() == 24,
-    pm = date.getHours() >= 12 && date.getHours() < 24;
-    
-    if (am) {
-      meridiem = 'AM';
-    }
-
-    if (pm) {
-      meridiem = 'PM';
-    }
-  }
-  meridiemConversions();
-  
-  
-  // CHARACTER VARIATIONS
-  function characterVariationsDestinction() {
-    mac_os = $('.time').parents('.mac-os').length;
-    
-    full_alphabetical_date =  weekday + comma + space + month + space + day_of_month + comma + space + year;
-    
-    full_numeric_date =  month + "/" + day_of_month + "/" + year;
-    
-    weekday_three_letters = weekday.substr(0, 3);
-    
-    weekday_one_letter = weekday.substr(0, 1);
-    
-    full_numeric_time = hour + ':' + minute + space + meridiem;
-  }
-  characterVariationsDestinction();
-  
-  
-  // PLACEMENTS
-  function placements() {       
-    function digital() {  
-      var digital_doesnt_exist = $('.time.digital').length == 0,
-          digital_exists = $('.time.digital').length == 1;
-          
-      if (digital_doesnt_exist) {
-        return;
-      } 
-      
-      if (digital_exists) {
-        $('.time.digital .clock.text')[0].innerHTML = weekday_three_letters + space + full_numeric_time;
-      }   
-      
-      if ($('.mac-os .menu-bar .full-date').length == 1) {
-        $('.mac-os .menu-bar .full-date')[0].innerHTML = full_alphabetical_date;
-      }  
-    }
-    digital();
-            
-    
-    function analog() {
-      var analog_doesnt_exist = $('.time.analog').length == 0,
-          analog_exists = $('.time.analog').length > 0;
-              
-          hour = hour % 12 / 12 * 360 + (minute * 6 / 12);
-          minute = minute * 6;
-          second = second * 6;
-      
-      if (analog_doesnt_exist) {
-        return;
-      }
-      
-      if (analog_exists) {
-        $('.time.analog .clock.border .hour').css('transform', 'rotate(' + hour + 'deg)');
-        $('.time.analog .clock.border .minute').css('transform', 'rotate(' + minute + 'deg)');
-      } 
-    }
-    analog();
-  }
-  placements();
-}
-}   
 
 
 
@@ -532,7 +304,7 @@ function repositionDraggable() {
   if (dragging) {
 //     if (first_drag) {
       $('.ui-draggable').addClass('dragged');
-//     }      
+//     }
   }
   
      
@@ -551,6 +323,31 @@ function repositionDraggable() {
   }, 1000);
   
 }
+
+
+
+
+// DRAGGABLE ELEMENT
+function draggableElement(element, handle) {
+  $(element).draggable({
+    handle: handle,
+    cursor: 'move'
+  });
+} 
+
+
+
+
+// DRAGGABLE ELEMENT WITH BLUR
+function draggableElementWithBlur(container, element, handle, blur, source) {
+  $(element).draggable({
+    handle: handle,
+    cursor: 'move', 
+    drag: function(event, ui) {
+      imageBlur(container, element, blur, source);
+    }
+  });
+} 
 
 
 
@@ -701,12 +498,10 @@ function imageBlur(container, element, blur, source) {
 function imageBlurReposition(container, element, blur, source) {
   $(container).mutate('width height', function(el, info) {
     imageBlur(container, element, blur, source);
-    console.log("container moved" + container);
   });
   
   $(element).mutate('width height', function(el, info) {
     imageBlur(container, element, blur, source);
-    console.log("element moved" + element);
   });
 }
 
@@ -768,7 +563,6 @@ function randomColorGeneratorContainer() {
   random_color_generator_interval = setInterval(randomColorGenerator, 400);
   function randomColorGenerator() {
     var color = Math.floor((Math.random() * 220) + 1);
-    console.log(color);
     $('.random-color').css("background-color", "rgb(" + color + ", " +  color + ", " +  color + ")");
   }
 }
@@ -853,3 +647,66 @@ function keyboardOut() {
   }
 }
 keyboardOut();
+
+
+
+
+// SEARCH
+function search(inputBar, viewpointContainer, text, media) {
+  $(inputBar).keyup(function() {
+    var entered_value = $(this).val(),
+        entered_value_regexp = new RegExp(entered_value, "gi"),
+        no_value = entered_value == "",
+        text_original;   
+
+    $(viewpointContainer).addClass('searching');
+    $(text).each(function() { 
+      text_original = $(this).text();
+
+      if (!text_original.match(entered_value_regexp)) {
+        $(this).addClass('hide');
+      }
+
+      if (text_original.match(entered_value_regexp)) {
+        $(this).removeClass('hide');
+      }
+
+      if (no_value) {
+        $(text, media).removeClass('hide');
+      }
+    });
+
+    $(media).each(function() {
+      if (entered_value.length > 0) {
+        $(this).addClass('hide');
+      }
+
+      if (no_value) {
+        $(this).removeClass('hide');
+      }
+    });
+  })
+}
+
+
+
+
+// SHARE ON SOCIAL MEDIA
+function shareOnSocialMedia(buttons) {
+  $(buttons).click(function() {
+    twitter = $(this).hasClass('twitter');
+    instagram = $(this).hasClass('instagram');
+    tumblr = $(this).hasClass('tumblr');
+    
+    if (twitter) {
+      line_break = '%0A';
+      window_open_link = 'https://twitter.com/intent/tweet?source=webclient&text=' + webpage_url;
+      window.open(window_open_link);
+    }
+
+    if (tumblr) {
+      window_open_link = 'https://www.tumblr.com/widgets/share/tool?posttype=link' + '&canonicalUrl=' + webpage_url;
+      window.open(window_open_link);
+    }
+  })
+}
