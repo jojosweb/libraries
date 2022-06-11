@@ -5,8 +5,13 @@
 
 
 // GLOBAL VARIABLES
-var fast_forward,
+var scroll_container_class = '.scroll-container',
+    uncompleted = !$('.scroll-container').hasClass('completed'),
+    completed = $('.scroll-container').hasClass('completed'),
+    fast_forward,
     current_paragraph,
+    previous_block,
+    next_block,
     next_block_class,
     next_block_number,
     next_paragraph,
@@ -76,7 +81,6 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
         let lengthClassSkip = elClassSkip.length;
 
         while (lengthClassSkip--) {
-//           $(elClassSkip[lengthClassSkip]).css('display', 'none');
         }
         return;
       }
@@ -147,259 +151,259 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
 
 // AUTOMATED SCROLL
 function automatedScrollAdjustment() {
-  var parent_container_height = $('.parent-container').height();
+  var primary_container_height = $('.primary-container').height();
  
   if (uncompleted) {
     var margin_top = 0;
     var current_scroll_container_height = $('.scroll-container').height();
 
-    if (current_scroll_container_height <= parent_container_height) {
+    if (current_scroll_container_height <= primary_container_height) {
       $('.scroll-container').css('margin-top', margin_top);
     } 
     
-    if (current_scroll_container_height >= parent_container_height) { 
-      if (current_scroll_container_height >= parent_container_height * 1) {
-        margin_top = -parent_container_height / 2;
+    if (current_scroll_container_height >= primary_container_height) { 
+      if (current_scroll_container_height >= primary_container_height * 1) {
+        margin_top = -primary_container_height / 2;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 1.5) {
-        margin_top = -parent_container_height;
+      if (current_scroll_container_height >= primary_container_height * 1.5) {
+        margin_top = -primary_container_height;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 2) {
-        margin_top = -parent_container_height * 1.5;
+      if (current_scroll_container_height >= primary_container_height * 2) {
+        margin_top = -primary_container_height * 1.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 2.5) {
-        margin_top = -parent_container_height * 2;
+      if (current_scroll_container_height >= primary_container_height * 2.5) {
+        margin_top = -primary_container_height * 2;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 3) {
-        margin_top = -parent_container_height * 2.5;
+      if (current_scroll_container_height >= primary_container_height * 3) {
+        margin_top = -primary_container_height * 2.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 3.5) {
-        margin_top = -parent_container_height * 3;
+      if (current_scroll_container_height >= primary_container_height * 3.5) {
+        margin_top = -primary_container_height * 3;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 4) {
-        margin_top = -parent_container_height * 3.5;
+      if (current_scroll_container_height >= primary_container_height * 4) {
+        margin_top = -primary_container_height * 3.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
     
-      if (current_scroll_container_height >= parent_container_height * 4.5) {
-        margin_top = -parent_container_height * 4;
+      if (current_scroll_container_height >= primary_container_height * 4.5) {
+        margin_top = -primary_container_height * 4;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 5) {
-        margin_top = -parent_container_height * 4.5;
+      if (current_scroll_container_height >= primary_container_height * 5) {
+        margin_top = -primary_container_height * 4.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
 
-      if (current_scroll_container_height >= parent_container_height * 5.5) {
-        margin_top = -parent_container_height * 5;
+      if (current_scroll_container_height >= primary_container_height * 5.5) {
+        margin_top = -primary_container_height * 5;
         $('.scroll-container').css('margin-top', margin_top);
       }
   
-      if (current_scroll_container_height >= parent_container_height * 6) {
-        margin_top = -parent_container_height * 5.5;
+      if (current_scroll_container_height >= primary_container_height * 6) {
+        margin_top = -primary_container_height * 5.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
 
-      if (current_scroll_container_height >= parent_container_height * 6.5) {
-        margin_top = -parent_container_height * 6;
+      if (current_scroll_container_height >= primary_container_height * 6.5) {
+        margin_top = -primary_container_height * 6;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 7) {
-        margin_top = -parent_container_height * 6.5;
+      if (current_scroll_container_height >= primary_container_height * 7) {
+        margin_top = -primary_container_height * 6.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 7.5) {
-        margin_top = -parent_container_height * 7;
+      if (current_scroll_container_height >= primary_container_height * 7.5) {
+        margin_top = -primary_container_height * 7;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 8) {
-        margin_top = -parent_container_height * 7.5;
+      if (current_scroll_container_height >= primary_container_height * 8) {
+        margin_top = -primary_container_height * 7.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 8.5) {
-        margin_top = -parent_container_height * 8;
+      if (current_scroll_container_height >= primary_container_height * 8.5) {
+        margin_top = -primary_container_height * 8;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 9) {
-        margin_top = -parent_container_height * 8.5;
+      if (current_scroll_container_height >= primary_container_height * 9) {
+        margin_top = -primary_container_height * 8.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 9.5) {
-        margin_top = -parent_container_height * 9;
+      if (current_scroll_container_height >= primary_container_height * 9.5) {
+        margin_top = -primary_container_height * 9;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 10) {
-        margin_top = -parent_container_height * 9.5;
+      if (current_scroll_container_height >= primary_container_height * 10) {
+        margin_top = -primary_container_height * 9.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 10.5) {
-        margin_top = -parent_container_height * 10;
+      if (current_scroll_container_height >= primary_container_height * 10.5) {
+        margin_top = -primary_container_height * 10;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 11) {
-        margin_top = -parent_container_height * 10.5;
+      if (current_scroll_container_height >= primary_container_height * 11) {
+        margin_top = -primary_container_height * 10.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 11.5) {
-        margin_top = -parent_container_height * 11;
+      if (current_scroll_container_height >= primary_container_height * 11.5) {
+        margin_top = -primary_container_height * 11;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 12) {
-        margin_top = -parent_container_height * 11.5;
+      if (current_scroll_container_height >= primary_container_height * 12) {
+        margin_top = -primary_container_height * 11.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 12.5) {
-        margin_top = -parent_container_height * 12;
+      if (current_scroll_container_height >= primary_container_height * 12.5) {
+        margin_top = -primary_container_height * 12;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 13) {
-        margin_top = -parent_container_height * 12.5;
+      if (current_scroll_container_height >= primary_container_height * 13) {
+        margin_top = -primary_container_height * 12.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 13.5) {
-        margin_top = -parent_container_height * 13;
+      if (current_scroll_container_height >= primary_container_height * 13.5) {
+        margin_top = -primary_container_height * 13;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 14) {
-        margin_top = -parent_container_height * 13.5;
+      if (current_scroll_container_height >= primary_container_height * 14) {
+        margin_top = -primary_container_height * 13.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 14.5) {
-        margin_top = -parent_container_height * 14;
+      if (current_scroll_container_height >= primary_container_height * 14.5) {
+        margin_top = -primary_container_height * 14;
         $('.scroll-container').css('margin-top', margin_top);
       }
 
-      if (current_scroll_container_height >= parent_container_height * 15) {
-        margin_top = -parent_container_height * 14.5;
+      if (current_scroll_container_height >= primary_container_height * 15) {
+        margin_top = -primary_container_height * 14.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 15.5) {
-        margin_top = -parent_container_height * 15;
+      if (current_scroll_container_height >= primary_container_height * 15.5) {
+        margin_top = -primary_container_height * 15;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 16) {
-        margin_top = -parent_container_height * 15.5;
+      if (current_scroll_container_height >= primary_container_height * 16) {
+        margin_top = -primary_container_height * 15.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
     
-      if (current_scroll_container_height >= parent_container_height * 16.5) {
-        margin_top = -parent_container_height * 16;
+      if (current_scroll_container_height >= primary_container_height * 16.5) {
+        margin_top = -primary_container_height * 16;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 17) {
-        margin_top = -parent_container_height * 16.5;
+      if (current_scroll_container_height >= primary_container_height * 17) {
+        margin_top = -primary_container_height * 16.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 17.5) {
-        margin_top = -parent_container_height * 17;
+      if (current_scroll_container_height >= primary_container_height * 17.5) {
+        margin_top = -primary_container_height * 17;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 18) {
-        margin_top = -parent_container_height * 17.5;
+      if (current_scroll_container_height >= primary_container_height * 18) {
+        margin_top = -primary_container_height * 17.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
     
-      if (current_scroll_container_height >= parent_container_height * 18.5) {
-        margin_top = -parent_container_height * 18;
+      if (current_scroll_container_height >= primary_container_height * 18.5) {
+        margin_top = -primary_container_height * 18;
         $('.scroll-container').css('margin-top', margin_top);
       }
   
-      if (current_scroll_container_height >= parent_container_height * 19) {
-        margin_top = -parent_container_height * 18.5;
+      if (current_scroll_container_height >= primary_container_height * 19) {
+        margin_top = -primary_container_height * 18.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 19.5) {
-        margin_top = -parent_container_height * 19;
+      if (current_scroll_container_height >= primary_container_height * 19.5) {
+        margin_top = -primary_container_height * 19;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 20) {
-        margin_top = -parent_container_height * 19.5;
+      if (current_scroll_container_height >= primary_container_height * 20) {
+        margin_top = -primary_container_height * 19.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 20.5) {
-        margin_top = -parent_container_height * 20;
+      if (current_scroll_container_height >= primary_container_height * 20.5) {
+        margin_top = -primary_container_height * 20;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 21) {
-        margin_top = -parent_container_height * 20.5;
+      if (current_scroll_container_height >= primary_container_height * 21) {
+        margin_top = -primary_container_height * 20.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 21.5) {
-        margin_top = -parent_container_height * 21;
+      if (current_scroll_container_height >= primary_container_height * 21.5) {
+        margin_top = -primary_container_height * 21;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 22) {
-        margin_top = -parent_container_height * 21.5;
+      if (current_scroll_container_height >= primary_container_height * 22) {
+        margin_top = -primary_container_height * 21.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 22.5) {
-        margin_top = -parent_container_height * 22;
+      if (current_scroll_container_height >= primary_container_height * 22.5) {
+        margin_top = -primary_container_height * 22;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 23) {
-        margin_top = -parent_container_height * 22.5;
+      if (current_scroll_container_height >= primary_container_height * 23) {
+        margin_top = -primary_container_height * 22.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 23.5) {
-        margin_top = -parent_container_height * 23;
+      if (current_scroll_container_height >= primary_container_height * 23.5) {
+        margin_top = -primary_container_height * 23;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 24) {
-        margin_top = -parent_container_height * 23.5;
+      if (current_scroll_container_height >= primary_container_height * 24) {
+        margin_top = -primary_container_height * 23.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 24.5) {
-        margin_top = -parent_container_height * 24;
+      if (current_scroll_container_height >= primary_container_height * 24.5) {
+        margin_top = -primary_container_height * 24;
         $('.scroll-container').css('margin-top', margin_top);
       }
       
-      if (current_scroll_container_height >= parent_container_height * 25) {
-        margin_top = -parent_container_height * 24.5;
+      if (current_scroll_container_height >= primary_container_height * 25) {
+        margin_top = -primary_container_height * 24.5;
         $('.scroll-container').css('margin-top', margin_top);
       }
     }
