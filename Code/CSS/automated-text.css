@@ -1,0 +1,19 @@
+/* AUTOMATED TEXT */
+.unread {
+  visibility: hidden;
+  display: none;
+}
+
+.reading {
+  visibility: visible;
+  display: block;
+}
+
+.reading::after {
+  content: "|";
+}
+
+.read {
+  visibility: visible;
+  display: block;
+}
