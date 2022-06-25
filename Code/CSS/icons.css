@@ -14,19 +14,11 @@
 
 
 
-
-
-
-
 /******** ORGANIZATION - SONY ********/
 /*^ SONY - PLAYSTATION ^*/
 .playstation .x.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Sony/Playstation/Controller/X/Black%20-%201%20-%20Comp.png");
 }
-
-
-
-
 
 
 
@@ -40,8 +32,6 @@
 .apple.black.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/0.%20Logo/Black%20-%201%20-%20Comp.png");
 }
-
-
 
 
 /*^ APPLE - AllOS ^*/
@@ -76,8 +66,6 @@
 .app-store.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/AllOS/App%20Store/White%20-%201%20-%20Comp.png");
 }
-
-
 
 
 /*^ APPLE - MacOS ^*/
@@ -136,8 +124,6 @@
 .zoom-out.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Apple/MacOS/Zoom/Out/%234f4f4f%20-%201%20-%20Comp.png");
 }
-
-
 
 
 /*^ APPLE - iOS  ^*/
@@ -226,15 +212,10 @@
 
 
 
-
-
-
 /******** ORGANIZATION - ROCKSTAR GAMES ********/
 .rockstar-games.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Rockstar%20Games/0.%20Logo/Yellow%20%2B%20Black%20-%201%20-%20Comp.png");
 }
-
-
 
 
 /*^ ROCKSTAR GAMES - GTA ^*/
@@ -253,18 +234,10 @@
 
 
 
-
-
-
-
 /******** ORGANIZATION - G.O.O.D MUSIC ********/
 .good-music.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/G.O.O.D%20Music/0.%20Logo/White%20%2B%20Black%20-%201%20-%20Comp.png");
 }
-
-
-
-
 
 
 
@@ -277,18 +250,10 @@
 
 
 
-
-
-
-
 /******** ORGANIZATION - BLONDED ********/
 .blonded.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Blonded/0.%20Logo/Black%20-%201%20-%20Comp.png");
 }
-
-
-
-
 
 
 
@@ -406,10 +371,6 @@
 
 
 
-
-
-
-
 /******** ORGANIZATION - INSTAGRAM ********/
 .instagram.gradient.icon::before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Instagram/0.%20Logo/Gradient%20-%201%20-%20Comp.png");
@@ -470,10 +431,6 @@
 
 
 
-
-
-
-
 /******** ORGANIZATION - TUMBLR ********/
 .tumblr.navy.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Tumblr/0.%20Logo/Navy%20-%201%20-%20Comp.png");
@@ -486,6 +443,7 @@
 .tumblr.black.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Tumblr/0.%20Logo/Black%20-%201%20-%20Comp.png");
 }
+
 
 
 
@@ -533,8 +491,6 @@
 
 
 
-
-
 /******** ORGANIZATION - YOUTUBE ********/
 .youtube.white.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Youtube/0.%20Logo/White%20-%201%20-%20Comp.png");
@@ -547,17 +503,37 @@
 
 
 
-
-
-
 /******** ORGANIZATION - LINKEDIN ********/
 .linkedin.black.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Social%20Media/LinkedIn/Black%20-%201%20(300).png");
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Black%20-%20000000%20-%201.png");
 }
 
+.linkedin.white._ffffff.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/White%20-%20ffffff%20-%201.png");
+}
 
+.linkedin.beige._ceb694.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Beige%20-%20ceb694%20-%201.png");
+}
 
+.linkedin.blue._0085fd.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Blue%20-%200085fd%20-%201.png");
+}
 
+.linkedin.blue._104665.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Blue%20-%20104665%20-%202.png");
+}
+
+.linkedin.green._00ff84.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Green%20-%2000ff84%20-%201.png");
+}
+
+.linkedin.grey._e0e0e0.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Grey%20-%20e0e0e0%20-%201.png");
+}
+
+.linkedin.red._ff1414.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Red%20-%20ff1414%20-%201.png");
 
 
 
@@ -586,10 +562,6 @@
 .gun-in-hand.outlined.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Acolorblue/Gun%20In%20Hand/Outlined%20-%20Comp.png");
 }
-
-
-
-
 
 
 
