@@ -351,12 +351,6 @@
   background-image: url("");
 }
 
-
-
-
-
-
-
 .twitter .extra-options.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png");
 }
@@ -500,7 +494,41 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Organizations/Facebook/0.%20Logo/Black%20-%201.png");
 }
 
+.facebook.beige._ceb694.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Beige%20-%20ceb694%20-%201.png");
+}
 
+.facebook.blue._0085fd.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Blue%20-%200085fd%20-%201.png");
+}
+
+.facebook.blue._104665.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Blue%20-%20104665%20-%202.png");
+}
+
+.facebook.green._00ff84.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Green%20-%2000ff84%20-%201.png");
+}
+
+.facebook.grey._e0e0e0.png.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Grey%20-%20e0e0e0%20-%201.png");
+}
+
+.facebook.red._ff1414.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Red%20-%20ff1414%20-%201.png");
+}
+
+.facebook..icon::before {
+  background-image: url("");
+}
+
+.facebook..icon::before {
+  background-image: url("");
+}
+
+.facebook..icon::before {
+  background-image: url("");
+}
 
 
 
