@@ -494,6 +494,10 @@
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Organizations/Facebook/0.%20Logo/Black%20-%201.png");
 }
 
+.facebook.white._ffffff.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/White%20-%20ffffff%20-%201.png");
+}
+
 .facebook.beige._ceb694.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Beige%20-%20ceb694%20-%201.png");
 }
@@ -516,10 +520,6 @@
 
 .facebook.red._ff1414.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Red%20-%20ff1414%20-%201.png");
-}
-
-.facebook..icon::before {
-  background-image: url("");
 }
 
 .facebook..icon::before {
