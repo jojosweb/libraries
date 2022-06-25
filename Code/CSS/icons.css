@@ -294,6 +294,7 @@
 
 
 /******** ORGANIZATION - TWITTER ********/
+/* LOGO */
 .twitter.blue.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/0.%20Logo/Blue%20-%201%20-%20Comp.png");
 }
@@ -305,6 +306,56 @@
 .twitter.black.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/0.%20Logo/Black%20-%201%20-%20Comp.png");
 }
+
+.twitter.beige.ceb694.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Beige%20-%20ceb694%20-%201.png");
+}
+
+.twitter.blue._0085fd.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Blue%20-%200085fd%20-%201.png");
+}
+
+.twitter.blue._104665.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Blue%20-%20104665%20-%202.png");
+}
+
+.twitter.green._006735.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Green%20-%20006735%20-%202.png");
+}
+
+.twitter.green._00ff84.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Green%20-%2000ff84%20-%201.png");
+}
+
+.twitter.grey._919191.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Grey%20-%20919191-%202.png");
+}
+
+.twitter.grey._dadbd5.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Grey%20-%20dadbd5%20-%203.png");
+}
+
+.twitter.grey._e0e0e0.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Grey%20-%20e0e0e0%20-%201.png");
+}
+
+.twitter.red._ff1414.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Red%20-%20ff1414%20-%201.png");
+}
+
+.twitter..icon::before {
+  background-image: url("");
+}
+
+.twitter..icon::before {
+  background-image: url("");
+}
+
+
+
+
+
+
 
 .twitter .extra-options.icon::before {
   background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Twitter/Extra%20Options/Blue%20-%201%20-%20Comp.png");
