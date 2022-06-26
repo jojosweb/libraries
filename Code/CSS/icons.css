@@ -304,6 +304,10 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Grey%20-%20e0e0e0%20-%201.png");
 }
 
+.twitter.grey._d3d4ce.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Grey%20-%20d3d4ce%20-%201.png");
+}
+
 .twitter.red._ff1414.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Red%20-%20ff1414%20-%201.png");
 }
@@ -369,8 +373,6 @@
 }
 
 
-
-
 /******** ORGANIZATION - INSTAGRAM ********/
 .instagram.gradient.icon::before {
    background-image: url("https://raw.githubusercontent.com/acolorblue/libraries/master/Icons/Organizations/Instagram/0.%20Logo/Gradient%20-%201%20-%20Comp.png");
@@ -414,6 +416,10 @@
 
 .instagram.grey._e0e0e0.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Grey%20-%20e0e0e0%20-%201.png");
+}
+
+.instagram.grey._d3d4ce.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Grey%20-%20d3d4ce%20-%201.png");
 }
 
 .instagram.red._ff1414.icon::before {
@@ -474,6 +480,10 @@
 
 .facebook.grey._e0e0e0.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Grey%20-%20e0e0e0%20-%201.png");
+}
+
+.facebook.grey._d3d4ce.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Grey%20-%20d3d4ce%20-%201.png");
 }
 
 .facebook.red._ff1414.icon::before {
