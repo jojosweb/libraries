@@ -292,6 +292,10 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Green%20-%2000ff84%20-%201.png");
 }
 
+.twitter.green._5bff3e.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Green%20-%205bff3e%20-%20TES247%20-%201.png");
+}
+
 .twitter.grey._919191.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Grey%20-%20919191-%202.png");
 }
@@ -406,6 +410,10 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Green%20-%2000ff84%20-%201.png");
 }
 
+.instagram.green._5bff3e.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Green%20-%205bff3e%20-%20TES247%20-%201.png");
+}
+
 .instagram.grey._919191.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Grey%20-%20919191-%202.png");
 }
@@ -478,6 +486,10 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Green%20-%2000ff84%20-%201.png");
 }
 
+.facebook.green._5bff3e.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Green%20-%205bff3e%20-%20TES247%20-%201.png");
+}
+
 .facebook.grey._e0e0e0.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Grey%20-%20e0e0e0%20-%201.png");
 }
@@ -536,6 +548,10 @@
 
 .linkedin.green._00ff84.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Green%20-%2000ff84%20-%201.png");
+}
+
+.linkedin.green._5bff3e.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Green%20-%205bff3e%20-%20TES247%20-%201.png");
 }
 
 .linkedin.grey._e0e0e0.icon::before {
