@@ -316,8 +316,8 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Red%20-%20ff1414%20-%201.png");
 }
 
-.twitter..icon::before {
-  background-image: url("");
+.twitter.gold._ffd700.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Gold%20-%20FFD700%20-%201.png");
 }
 
 .twitter..icon::before {
@@ -434,8 +434,8 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Red%20-%20ff1414%20-%201.png");
 }
 
-.instagram..icon::before {
-  background-image: url("");
+.instagram.gold._ffd700.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Gold%20-%20FFD700%20-%201.png");
 }
 
 .instagram..icon::before {
@@ -502,8 +502,8 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Red%20-%20ff1414%20-%201.png");
 }
 
-.facebook..icon::before {
-  background-image: url("");
+.facebook.gold._ffd700.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Gold%20-%20FFD700%20-%201.png");
 }
 
 .facebook..icon::before {
@@ -560,6 +560,10 @@
 
 .linkedin.red._ff1414.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Red%20-%20ff1414%20-%201.png");
+}
+
+.linkedin.gold._ffd700.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Gold%20-%20FFD700%20-%201.png");
 }
 
 
