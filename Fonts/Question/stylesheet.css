@@ -1,0 +1,10 @@
+ @font-face {
+    font-family: 'Question';
+    src: url('../Question/Question.eot');
+    src: url('../Question/Question.eot?#iefix') format('embedded-opentype'),
+    	 url('../Question/Question.woff2') format('woff2'),
+         url('../Question/Question.woff') format('woff'),
+         url('../Question/Question.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
