@@ -1,0 +1,10 @@
+ @font-face {
+    font-family: 'LoudBeats';
+    src: url('../LoudBeats/LoudBeats.eot');
+    src: url('../LoudBeats/LoudBeats.eot?#iefix') format('embedded-opentype'),
+    	 url('../LoudBeats/LoudBeats.woff2') format('woff2'),
+         url('../LoudBeats/LoudBeats.woff') format('woff'),
+         url('../LoudBeats/LoudBeats.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
