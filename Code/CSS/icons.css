@@ -320,6 +320,18 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Gold%20-%20FFD700%20-%201.png");
 }
 
+.twitter.yellow._fffc00.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Twitter/Yellow%20-%20fffc00%20-%201.png");
+}
+
+.twitter..icon::before {
+  background-image: url("");
+}
+
+.twitter..icon::before {
+  background-image: url("");
+}
+
 .twitter..icon::before {
   background-image: url("");
 }
@@ -438,6 +450,14 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Gold%20-%20FFD700%20-%201.png");
 }
 
+.instagram.yellow._fffc00.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Instagram/Yellow%20-%20fffc00%20-1.png");
+}
+
+.instagram..icon::before {
+  background-image: url("");
+}
+
 .instagram..icon::before {
   background-image: url("");
 }
@@ -506,6 +526,14 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Gold%20-%20FFD700%20-%201.png");
 }
 
+.facebook.yellow._fffc00.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/Facebook/0.%20Logo/Yellow%20-%20fffc00%20-%201.png");
+}
+
+.facebook..icon::before {
+  background-image: url("");
+}
+
 .facebook..icon::before {
   background-image: url("");
 }
@@ -566,6 +594,13 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Gold%20-%20FFD700%20-%201.png");
 }
 
+.linkedin.yellow._fffc00.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/0.%20Organizations/LinkedIn/Yellow%20-%20fffc00%20-%201.png");
+}
+
+.linkedin..icon::before {
+  background-image: url("");
+}
 
 
 /******** ORGANIZATION - ACOLORBLUE ********/
