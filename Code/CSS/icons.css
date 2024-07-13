@@ -663,6 +663,12 @@
 }
 
 
+
+
 .billboard.black.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Billboard/Black%20And%20White%20-%201.png");
+  background-image: url("");
+}
+
+.bullhorn.black.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Bullhorn/Bullhorn.png");
 }
