@@ -661,3 +661,8 @@
 .mail.white._ffffff.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Mail/White%20-%201.png");
 }
+
+
+.billboard.black._000000.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Billboard/Black%20And%20White%20-%201.png");
+}
