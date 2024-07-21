@@ -636,9 +636,18 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Home/Designed%20New%20-%207.png");
 }
 
+.home.white.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Home/Home%20-%20White%20-%201.png");
+}
+
 .info.black.icon::before,
 .about.black.icon::before{
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Info/i%20-Black%20-%201.png");
+}
+
+.info.white.icon::before,
+.about.white.icon::before{
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Info/i%20-%20White%20-%201.png");
 }
 
 .yc.black.icon::before {
@@ -653,14 +662,20 @@
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Invest/noun-invest-2909340.png");
 }
 
+.invest.white.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Hands/Hand%20With%20Money%20-%20White%20-%201.png");
+}
+
 .contact.black.icon::before,
 .mail.black.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Mail/Darkened%20-%202.png");
 }
 
-.mail.white._ffffff.icon::before {
-  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Mail/White%20-%201.png");
+.contact.white.icon::before,
+.mail.white.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Mail/Mail%20-%20White%20-%201.png");
 }
+
 
 
 
@@ -669,6 +684,13 @@
   background-image: url("");
 }
 
+
+
+/* BULLHORN */
 .bullhorn.black.icon::before {
   background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Bullhorn/Bullhorn.png");
+}
+
+.bullhorn.white.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/main/Icons/Bullhorn/Bullhorn%20-%20White%20-%201.png");
 }
