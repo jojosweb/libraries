@@ -263,6 +263,15 @@
 }
 
 
+/******** ORGANIZATION - X Corp ********/
+/* LOGO */
+.x-corp.white.icon::before {
+  background-image: url("https://raw.githubusercontent.com/jojosweb/libraries/refs/heads/main/Icons/0.%20Organizations/X/White%20-%201.png");
+}
+
+
+
+
 
 /******** ORGANIZATION - TWITTER ********/
 /* LOGO */
